@@ -1,14 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="mainApp">
+	<head>
+		<link rel="stylesheet" href="./style.css">
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<span><a ui-sref="init">home</a></span>
+		<div class="main">
+			<ui-view></ui-view>
 
+			</div>
+		<footer class="bottom-nav">
+			<span id="first-item"><a ui-sref="friends">View Friends</a></span>
+			<span class="second-item"><a ui-sref="find-friends">Find Friends</a></span>
+			<span class="third-item"><a ui-sref="update-profile">Update Profile</a></span>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="./js/initCtrl.js"></script>
+		<script src="./js/friendsCtrl.js"></script>
+		<script src="./js/findFriendsCtrl.js"></script>
+		<script src="./js/updateProfileCtrl.js"></script>
+	</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en" >
 <head>
+	<link rel="stylesheet" href="./style.css">
 	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DevMtin</title>
 </head>
+<body ng-controller="findFriendsCtrl">
+	<div id="main">
+	<div ng-view>{{message}}</div>
 
-<body>
-
-  
+ </div>
+		<footer class="bottom-nav">
+			<span id="first-item"><a href="./#friends">View Friends</a></span>
+			<span class="second-item"><a href="./#find-friends">Find Friends</a></span>
+			<span class="third-item"><a href="./#update-profile">Update Profile</a></span>
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/ctrl.js"></script>
+	<script src="./js/services.js"></script>
 </body>
-</html>
+</html> -->
